@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.2/.schema/devbox.schema.json",
+  "packages": [
+    "kubectl@latest",
+    "kubernetes-helm@latest",
+    "k9s@latest",
+    "yq-go@latest",
+    "jq@latest"
+  ],
+  "env": {
+    "DEVBOX_ENV": "kubewerk"
+  },
+  "shell": {
+    "init_hook": ["echo '╭─ devbox: KubeWerk-DE env (placeholder — add KubeWerk-specific tools)'"]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.2/.schema/devbox.schema.json",
+  "packages": [
+    "kubectl@latest",
+    "kubectx@latest",
+    "kubecolor@latest",
+    "k9s@latest",
+    "kubernetes-helm@latest",
+    "helmfile@latest",
+    "kubelogin-oidc@latest",
+    "fluxcd@latest",
+    "stern@latest",
+    "kubeseal@latest",
+    "yq-go@latest",
+    "jq@latest"
+  ],
+  "env": {
+    "DEVBOX_ENV": "k8s"
+  },
+  "shell": {
+    "init_hook": ["echo '╭─ devbox: k8s env'"],
+    "scripts": {
+      "watch":   ["watch -n 2 'kubectl get pods,svc,ingress -A'"],
+      "ctx":     ["kubectx"],
+      "ns":      ["kubens"],
+      "logs":    ["stern -n ${1:-default} ${2:-.*}"]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# devbox / Nix state — machine-local, regenerated on entry
+**/.devbox/
+**/.direnv/
+**/devbox.lock
+
+# OS / editor noise
+.DS_Store
+*.swp
