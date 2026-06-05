@@ -29,7 +29,8 @@
     "nmap@latest",
     "tree@latest",
     "watch@latest",
-    "stern@latest"
+    "stern@latest",
+    "neovim@latest"
   ],
   "env": {
     "DEVBOX_ENV": "sre"
