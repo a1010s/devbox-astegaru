@@ -28,7 +28,8 @@
     "swaks@latest",
     "nmap@latest",
     "tree@latest",
-    "watch@latest"
+    "watch@latest",
+    "stern@latest"
   ],
   "env": {
     "DEVBOX_ENV": "sre"
