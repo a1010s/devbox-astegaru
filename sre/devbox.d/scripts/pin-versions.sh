@@ -7,7 +7,9 @@
 
 set -euo pipefail
 
-cd "$DEVBOX_CONFIG_DIR" 2>/dev/null || cd "$(dirname "$0")/.."
+# devbox sets DEVBOX_CONFIG_DIR to env-dir/devbox.d/ when present.
+# devbox.json lives at env-dir/devbox.json — use DEVBOX_PROJECT_ROOT.
+cd "${DEVBOX_PROJECT_ROOT:-$(cd "$(dirname "$0")/../.." && pwd)}"
 
 [ -f devbox.json ] || { echo "no devbox.json in $(pwd)"; exit 1; }
 
