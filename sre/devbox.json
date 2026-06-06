@@ -34,7 +34,9 @@
     "terragrunt@0.67.9"
   ],
   "env": {
-    "DEVBOX_ENV": "sre"
+    "DEVBOX_ENV": "sre",
+    "TERRAGRUNT_TFPATH": "terraform",
+    "TG_TF_PATH": "terraform"
   },
   "shell": {
     "init_hook": [
