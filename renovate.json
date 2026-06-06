@@ -1,0 +1,29 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    ":timezone(Europe/Berlin)"
+  ],
+  "schedule": ["before 8am on monday"],
+  "labels": ["dependencies"],
+  "devbox": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "description": "Auto-merge patch + minor updates",
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": false,
+      "groupName": "devbox patch+minor"
+    },
+    {
+      "description": "Hold major updates for manual review",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "addLabels": ["breaking-change"]
+    }
+  ],
+  "prHourlyLimit": 4,
+  "prConcurrentLimit": 10
+}

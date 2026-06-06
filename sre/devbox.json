@@ -1,65 +1,55 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.2/.schema/devbox.schema.json",
   "packages": [
-    "terraform@latest",
-    "opentofu@latest",
-    "kubectl@latest",
-    "kubectx@latest",
-    "kubecolor@latest",
-    "k9s@latest",
-    "kubernetes-helm@latest",
-    "helmfile@latest",
-    "kubelogin-oidc@latest",
-    "fluxcd@latest",
-    "sops@latest",
-    "trivy@latest",
-    "hcloud@latest",
-    "awscli2@latest",
-    "azure-cli@latest",
-    "yq-go@latest",
-    "jq@latest",
-    "fzf@latest",
-    "ripgrep@latest",
-    "fd@latest",
-    "yamlfmt@latest",
-    "lazygit@latest",
-    "git-filter-repo@latest",
-    "grpcurl@latest",
-    "swaks@latest",
-    "nmap@latest",
-    "tree@latest",
-    "watch@latest",
-    "stern@latest",
-    "neovim@latest"
+    "terraform@1.15.4",
+    "opentofu@1.12.1",
+    "kubectl@1.36.1",
+    "kubectx@0.11.0",
+    "kubecolor@0.6.0",
+    "k9s@0.50.18",
+    "kubernetes-helm@3.20.2",
+    "helmfile@1.5.0",
+    "kubelogin-oidc@1.36.1",
+    "fluxcd@2.8.8",
+    "sops@3.13.1",
+    "trivy@0.69.3",
+    "hcloud@1.64.1",
+    "awscli2@2.34.24",
+    "azure-cli@2.86.0",
+    "yq-go@4.53.2",
+    "jq@1.8.1",
+    "fzf@0.73.1",
+    "ripgrep@15.1.0",
+    "fd@10.4.2",
+    "yamlfmt@0.21.0",
+    "lazygit@0.62.1",
+    "git-filter-repo@2.47.0",
+    "grpcurl@1.9.3",
+    "swaks@20240103.0",
+    "nmap@7.99",
+    "tree@2.3.2",
+    "watch@3.3.17",
+    "stern@1.34.0",
+    "neovim@0.12.2"
   ],
   "env": {
     "DEVBOX_ENV": "sre"
   },
   "shell": {
     "init_hook": [
+      "[ -f \"$DEVBOX_CONFIG_DIR/scripts/devbox-update.sh\" ] && bash \"$DEVBOX_CONFIG_DIR/scripts/devbox-update.sh\"",
+      "INIT_SCRIPT=\"$DEVBOX_CONFIG_DIR/scripts/$(basename \"$SHELL\").sh\"",
+      "[ -f \"$INIT_SCRIPT\" ] && source \"$INIT_SCRIPT\"",
       "echo '╭─ devbox: SRE toolkit ready'",
       "echo '╰─ use `devbox info <pkg>` for versions, `devbox run <script>` for shortcuts'"
     ],
     "scripts": {
-      "tf-plan": [
-        "terraform init -upgrade",
-        "terraform plan -out=tfplan"
-      ],
-      "tf-apply": [
-        "terraform apply tfplan"
-      ],
-      "tf-fmt": [
-        "terraform fmt -recursive ."
-      ],
-      "k-watch": [
-        "watch -n 2 'kubectl get pods,svc,ingress -A'"
-      ],
-      "yaml-lint": [
-        "yamlfmt -lint -formatter basic,indentless_arrays=true ."
-      ],
-      "trivy-scan": [
-        "trivy fs --severity HIGH,CRITICAL ."
-      ]
+      "tf-plan":    ["terraform init -upgrade", "terraform plan -out=tfplan"],
+      "tf-apply":   ["terraform apply tfplan"],
+      "tf-fmt":     ["terraform fmt -recursive ."],
+      "k-watch":    ["watch -n 2 'kubectl get pods,svc,ingress -A'"],
+      "yaml-lint":  ["yamlfmt -lint -formatter basic,indentless_arrays=true ."],
+      "trivy-scan": ["trivy fs --severity HIGH,CRITICAL ."]
     }
   }
 }
