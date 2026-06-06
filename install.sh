@@ -19,23 +19,23 @@ add_alias() {
     rm -f "${file}.bak"
     echo "  ↻  $name updated in $file"
   else
-    printf '\n# devbox-astegaru\nalias %s="%s"\n' "$name" "$cmd" >> "$file"
+    printf '\n# devbox-astegaru\nalias %s="%s"\n' "$name" "$cmd" >>"$file"
     echo "  +  $name added to $file"
   fi
 }
 
 for shell_rc in ~/.zshrc ~/.bashrc; do
   echo "==> $shell_rc"
-  add_alias "$shell_rc" "sre-shell"       "sre"
-  add_alias "$shell_rc" "tf-shell"        "terraform"
-  add_alias "$shell_rc" "k8s-shell"       "k8s"
-  add_alias "$shell_rc" "kubewerk-shell"  "kubewerk"
+  add_alias "$shell_rc" "a-shell" "sre"
+  add_alias "$shell_rc" "tf-shell" "terraform"
+  add_alias "$shell_rc" "k8s-shell" "k8s"
+  add_alias "$shell_rc" "kubewerk-shell" "kubewerk"
 done
 
 cat <<'EOF'
 
 Done. Open a new shell or `exec zsh` and use:
-  sre-shell       # full SRE toolkit
+  a-shell       # full SRE toolkit
   tf-shell        # terraform-only fast shell
   k8s-shell       # kubernetes-focused
   kubewerk-shell  # KubeWerk-DE env
