@@ -1,7 +1,8 @@
-# devbox / Nix state — machine-local, regenerated on entry
+# Activation state (machine-local, regenerated on entry)
 **/.devbox/
 **/.direnv/
-**/devbox.lock
+
+# devbox.lock IS tracked — pins exact nix store hashes for cross-machine parity
 
 # OS / editor noise
 .DS_Store
