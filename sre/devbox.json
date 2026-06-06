@@ -38,9 +38,7 @@
   },
   "shell": {
     "init_hook": [
-      "[ -f \"$DEVBOX_CONFIG_DIR/scripts/devbox-update.sh\" ] && bash \"$DEVBOX_CONFIG_DIR/scripts/devbox-update.sh\"",
-      "INIT_SCRIPT=\"$DEVBOX_CONFIG_DIR/scripts/$(basename \"$SHELL\").sh\"",
-      "[ -f \"$INIT_SCRIPT\" ] && source \"$INIT_SCRIPT\"",
+      "[ -f \"$DEVBOX_PROJECT_ROOT/devbox.d/scripts/devbox-update.sh\" ] && bash \"$DEVBOX_PROJECT_ROOT/devbox.d/scripts/devbox-update.sh\"",
       "echo '╭─ devbox: SRE toolkit ready'",
       "echo '╰─ use `devbox info <pkg>` for versions, `devbox run <script>` for shortcuts'"
     ],
