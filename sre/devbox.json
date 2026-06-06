@@ -31,7 +31,7 @@
     "watch@3.3.17",
     "stern@1.34.0",
     "neovim@0.12.2",
-    "terragrunt@latest"
+    "terragrunt@0.67.9"
   ],
   "env": {
     "DEVBOX_ENV": "sre"
