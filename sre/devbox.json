@@ -45,6 +45,7 @@
       "echo '╰─ use `devbox info <pkg>` for versions, `devbox run <script>` for shortcuts'"
     ],
     "scripts": {
+      "pin":        ["bash $DEVBOX_CONFIG_DIR/scripts/pin-versions.sh"],
       "tf-plan":    ["terraform init -upgrade", "terraform plan -out=tfplan"],
       "tf-apply":   ["terraform apply tfplan"],
       "tf-fmt":     ["terraform fmt -recursive ."],
