@@ -31,12 +31,13 @@
     "watch@3.3.17",
     "stern@1.34.0",
     "neovim@0.12.2",
-    "terragrunt@0.67.9"
+    "terragrunt@0.67.9",
+    "bat@0.26.1"
   ],
   "env": {
-    "DEVBOX_ENV": "sre",
+    "DEVBOX_ENV":        "sre",
     "TERRAGRUNT_TFPATH": "terraform",
-    "TG_TF_PATH": "terraform"
+    "TG_TF_PATH":        "terraform"
   },
   "shell": {
     "init_hook": [
