@@ -177,6 +177,54 @@
         }
       }
     },
+    "bazelisk@latest": {
+      "last_modified": "2026-05-21T08:15:18Z",
+      "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#bazelisk",
+      "source": "devbox-search",
+      "version": "1.28.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/sagm148yqfsr6m3mgwppp213iny03jdx-bazelisk-1.28.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/sagm148yqfsr6m3mgwppp213iny03jdx-bazelisk-1.28.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/si8id9mh4gjmf0q5iircv1031any8acv-bazelisk-1.28.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/si8id9mh4gjmf0q5iircv1031any8acv-bazelisk-1.28.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1xmw74sych7fd96bbx6w3bbvpp7hbpnw-bazelisk-1.28.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1xmw74sych7fd96bbx6w3bbvpp7hbpnw-bazelisk-1.28.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bnxk2g7srfbmm0ghhlzimkzshpwls211-bazelisk-1.28.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bnxk2g7srfbmm0ghhlzimkzshpwls211-bazelisk-1.28.1"
+        }
+      }
+    },
     "fd@10.4.2": {
       "last_modified": "2026-05-21T08:15:18Z",
       "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#fd",
@@ -409,7 +457,7 @@
       "last_modified": "2026-06-02T02:01:59Z",
       "resolved": "github:NixOS/nixpkgs/ffa10e26ae11d676b2db836259889f1f571cb14f?lastModified=1780365719&narHash=sha256-QfWfccTN%2B70ZQ4m2qlU9PiKfz2Yppq94058iJyARNwc%3D"
     },
-    "go-task@latest": {
+    "go-task@3.48.0": {
       "last_modified": "2026-05-21T08:15:18Z",
       "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#go-task",
       "source": "devbox-search",

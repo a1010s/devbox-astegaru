@@ -33,7 +33,8 @@
     "neovim@0.12.2",
     "terragrunt@0.67.9",
     "bat@0.26.1",
-    "go-task@3.48.0"
+    "go-task@3.48.0",
+    "bazelisk@1.28.1"
   ],
   "env": {
     "DEVBOX_ENV":        "sre",
