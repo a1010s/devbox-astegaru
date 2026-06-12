@@ -32,7 +32,8 @@
     "stern@1.34.0",
     "neovim@0.12.2",
     "terragrunt@0.67.9",
-    "bat@0.26.1"
+    "bat@0.26.1",
+    "go-task@3.48.0"
   ],
   "env": {
     "DEVBOX_ENV":        "sre",
