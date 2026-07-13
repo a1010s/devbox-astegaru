@@ -225,6 +225,90 @@
         }
       }
     },
+    "crane@latest": {
+      "last_modified": "2026-06-27T07:37:20Z",
+      "resolved": "github:NixOS/nixpkgs/3d46470bb3030020f7e1361f33514854f5bfa86d#crane",
+      "source": "devbox-search",
+      "version": "0.21.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "crane",
+              "path": "/nix/store/8kkkbjn4qiqym3vpp6qciqvdvpgjhsbq-go-containerregistry-0.21.6-crane",
+              "default": true
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/7qplfncjghbj1f8qhjjlr5gscxkcpfdb-go-containerregistry-0.21.6",
+              "default": true
+            },
+            {
+              "name": "gcrane",
+              "path": "/nix/store/ky9b8mp7s1qbc8dvxpi0zl6c48zb4p58-go-containerregistry-0.21.6-gcrane"
+            }
+          ],
+          "store_path": "/nix/store/8kkkbjn4qiqym3vpp6qciqvdvpgjhsbq-go-containerregistry-0.21.6-crane"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "crane",
+              "path": "/nix/store/1v8skyhw7dpwxkdmklgq5l5sdhb6aai7-go-containerregistry-0.21.6-crane",
+              "default": true
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/jalk35b742dymv8nzxm641yij0j1xsh4-go-containerregistry-0.21.6",
+              "default": true
+            },
+            {
+              "name": "gcrane",
+              "path": "/nix/store/hwsq5n7zir6rcjsl1bqhi8qhjb063lfk-go-containerregistry-0.21.6-gcrane"
+            }
+          ],
+          "store_path": "/nix/store/1v8skyhw7dpwxkdmklgq5l5sdhb6aai7-go-containerregistry-0.21.6-crane"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "crane",
+              "path": "/nix/store/bwd0aidl32sxxihmnrrnd9i1czh5acvk-go-containerregistry-0.21.6-crane",
+              "default": true
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/l80xya29xp87kndj8hn2niw4qjm98p7y-go-containerregistry-0.21.6",
+              "default": true
+            },
+            {
+              "name": "gcrane",
+              "path": "/nix/store/bj5vdr5lzq874hflzd8fl73q698s9gv9-go-containerregistry-0.21.6-gcrane"
+            }
+          ],
+          "store_path": "/nix/store/bwd0aidl32sxxihmnrrnd9i1czh5acvk-go-containerregistry-0.21.6-crane"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "crane",
+              "path": "/nix/store/h71ai10amxrplid73i7xa47haalsrzcs-go-containerregistry-0.21.6-crane",
+              "default": true
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/wx0999z9idk2wh96280hw1bwx37hwqmi-go-containerregistry-0.21.6",
+              "default": true
+            },
+            {
+              "name": "gcrane",
+              "path": "/nix/store/vh68qy0a2fbqp9f9swpwh1lm538w0q05-go-containerregistry-0.21.6-gcrane"
+            }
+          ],
+          "store_path": "/nix/store/h71ai10amxrplid73i7xa47haalsrzcs-go-containerregistry-0.21.6-crane"
+        }
+      }
+    },
     "fd@10.4.2": {
       "last_modified": "2026-05-21T08:15:18Z",
       "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#fd",

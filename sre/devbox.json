@@ -35,7 +35,8 @@
     "bat@0.26.1",
     "go-task@3.48.0",
     "bazelisk@1.28.1",
-    "kubecm@0.35.1"
+    "kubecm@0.35.1",
+    "crane@latest"
   ],
   "env": {
     "DEVBOX_ENV":        "sre",
