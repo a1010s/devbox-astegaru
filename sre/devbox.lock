@@ -898,8 +898,13 @@
       }
     },
     "kubecm@0.35.1": {
+<<<<<<< Updated upstream
       "last_modified": "2026-05-21T08:15:18Z",
       "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#kubecm",
+=======
+      "last_modified": "2026-07-23T05:10:05Z",
+      "resolved": "github:NixOS/nixpkgs/7525d999cd850b9a488817abc89c75dc733acf17#kubecm",
+>>>>>>> Stashed changes
       "source": "devbox-search",
       "version": "0.35.1",
       "systems": {
@@ -907,41 +912,41 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/awv2w76ngkmlmh8xsbnkbz5qfpgjvgq1-kubecm-0.35.1",
+              "path": "/nix/store/zpd6j3qsqn0ihchn3z5p9mr7rx7vr9pl-kubecm-0.35.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/awv2w76ngkmlmh8xsbnkbz5qfpgjvgq1-kubecm-0.35.1"
+          "store_path": "/nix/store/zpd6j3qsqn0ihchn3z5p9mr7rx7vr9pl-kubecm-0.35.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/j86qf0mmimmr2d2i5a5qbwqi031gjc7h-kubecm-0.35.1",
+              "path": "/nix/store/z3dafnhal6n7hjkv7h8anrw7y5717bdc-kubecm-0.35.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/j86qf0mmimmr2d2i5a5qbwqi031gjc7h-kubecm-0.35.1"
+          "store_path": "/nix/store/z3dafnhal6n7hjkv7h8anrw7y5717bdc-kubecm-0.35.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/hf084xvhqai22c673psagywn1cp47xx4-kubecm-0.35.1",
+              "path": "/nix/store/hzpqhc7crzywafifmarzx0kysy7ivfvm-kubecm-0.35.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/hf084xvhqai22c673psagywn1cp47xx4-kubecm-0.35.1"
+          "store_path": "/nix/store/hzpqhc7crzywafifmarzx0kysy7ivfvm-kubecm-0.35.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ad2x8axwfs1izb00wazkr6wnzdk5gx3d-kubecm-0.35.1",
+              "path": "/nix/store/di720m27y15r9rzqv1yp89bnvpyda6i0-kubecm-0.35.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/ad2x8axwfs1izb00wazkr6wnzdk5gx3d-kubecm-0.35.1"
+          "store_path": "/nix/store/di720m27y15r9rzqv1yp89bnvpyda6i0-kubecm-0.35.1"
         }
       }
     },
