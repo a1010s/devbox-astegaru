@@ -5,7 +5,7 @@
     "kubectx@latest",
     "kubecolor@latest",
     "k9s@latest",
-    "kubernetes-helm@latest",
+    "kubernetes-helm@4.2.4",
     "helmfile@latest",
     "kubelogin-oidc@latest",
     "fluxcd@latest",
