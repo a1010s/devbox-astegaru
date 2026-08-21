@@ -8,7 +8,7 @@
     "kubernetes-helm@latest",
     "helmfile@latest",
     "kubelogin-oidc@latest",
-    "fluxcd@latest",
+    "fluxcd@2.9.4",
     "stern@latest",
     "kubeseal@latest",
     "yq-go@latest",
