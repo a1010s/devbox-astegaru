@@ -1,18 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.2/.schema/devbox.schema.json",
   "packages": [
-    "kubectl@latest",
-    "kubectx@latest",
-    "kubecolor@latest",
-    "k9s@latest",
-    "kubernetes-helm@latest",
-    "helmfile@latest",
-    "kubelogin-oidc@latest",
-    "fluxcd@latest",
-    "stern@latest",
-    "kubeseal@latest",
-    "yq-go@latest",
-    "jq@latest"
+    "kubectl@1.36.3",
+    "kubectx@0.11.0",
+    "kubecolor@0.6.0",
+    "k9s@0.51.0",
+    "kubernetes-helm@3.20.2",
+    "helmfile@0.171.0",
+    "kubelogin-oidc@1.36.3",
+    "fluxcd@0.41.2",
+    "stern@1.34.0",
+    "kubeseal@0.38.4",
+    "yq-go@3.4.1",
+    "jq@1.8.2"
   ],
   "env": {
     "DEVBOX_ENV": "k8s"
