@@ -1,14 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.2/.schema/devbox.schema.json",
   "packages": [
-    "terraform@latest",
-    "opentofu@latest",
-    "tflint@latest",
-    "trivy@latest",
-    "terraformer@latest",
-    "sops@latest",
-    "jq@latest",
-    "yq-go@latest"
+    "terraform@0.12.31",
+    "opentofu@1.13.5",
+    "tflint@0.65.0",
+    "trivy@0.76.1",
+    "terraformer@0.8.30",
+    "sops@3.13.3",
+    "jq@1.8.2",
+    "yq-go@3.4.1"
   ],
   "env": {
     "DEVBOX_ENV": "terraform"
